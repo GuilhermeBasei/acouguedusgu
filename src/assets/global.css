@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+input{
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 3px 5px;
+    width: 140px;
+    height: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+select{
+    border-radius: 5px;
+    width: 140px;
+    height: 1.8rem;
+    margin-top: 0.5rem;
+    background-color: aquamarine;
+    padding: 3px 5px;
+}
