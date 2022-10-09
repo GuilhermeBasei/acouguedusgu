@@ -1,6 +1,5 @@
 .container{
     max-width: 75vw;
-    
 }
 .container .carrossel{
 display: flex;
@@ -22,7 +21,7 @@ scroll-behavior: smooth;
 }
 
 .container .carrossel .item .info{
-    height: 140px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -34,18 +33,22 @@ scroll-behavior: smooth;
    margin: 10px;
 }
 
-.container .carrossel .item .info .oldpreco{
-font-size: 0.8rem;
-text-decoration: line-through;
-flex-grow: 1;
-}
 
 .container .carrossel .item .info .preco{
-   margin-top: 10px;
+   margin-top: 5px;
+   border-radius: 10px;
    font-size: 1.2rem;
    font-weight: bold;
    background-color: orange;
-    }
+   text-align: center;
+}
+
+button{
+background-color: black;
+color: white;
+text-align: center;
+border-radius: 10px;
+}
 
 
 

@@ -1,12 +1,12 @@
-import { Carrossel } from '../../components/Carrossel'
+import { Itens } from '../../components/Itens'
 import { Navbar } from '../../components/Navbar'
 import './styles.css'
 
 export const Home = () =>{
     return(
-       <div className="container">
+       <div>
        <Navbar/>
-       <Carrossel/>
+       <Itens/>       
        </div>
 
     )
