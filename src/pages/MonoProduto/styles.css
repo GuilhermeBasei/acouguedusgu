@@ -1,0 +1,22 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;   
+}
+
+.imgProd{
+    width: 300px;
+    height: 300px;
+}
+
+.btComprar{
+   padding: 10px;
+}
+
+.btAdd{
+    padding: 10px;
+    background-color: orange;
+    color: black;
+    text-align: center;
+    margin-left: 5px;
+}

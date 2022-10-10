@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { Contatos } from '../../components/Contatos'
 import { Navbar } from '../../components/Navbar'
 import './styles.css'
 
@@ -13,12 +14,13 @@ export const Cadastro = () =>{
                         <input type="text" placeholder="Nome" />                       
                         <input type="password" placeholder="Senha" />
                         <input type="password" placeholder="Repita a senha" />
-                        <button>login</button>
+                        <button>Cadrastre-se</button>
                         <p class="message">Já tem registro? <Link to={'/login'}>Faça login clicando aqui</Link></p>                      
 
                     </form>
                 </div>
             </div>
+            <Contatos/>
         </div>
 
     )

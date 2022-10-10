@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { Contatos } from '../../components/Contatos'
 import { Navbar } from '../../components/Navbar'
 import './styles.css'
 
@@ -16,6 +17,7 @@ export const Login = () => {
                     </form>
                 </div>
             </div>
+            <Contatos/>  
         </div>
     )
 }
