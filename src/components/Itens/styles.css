@@ -3,38 +3,41 @@
 }
 .container .carrossel{
 display: flex;
-overflow-x: auto;
 scroll-behavior: smooth;
 }
 
-.container .carrossel .item{
+.container .carrossel .container-item {
+    padding: 15px;
+}
+
+.container .carrossel .container-item .item{
     background-color: rgb(215, 200, 193);
     margin: 10px;
     padding: 10px;
-    width: 280px;
+
 }
 
-.container .carrossel .item .image img{
+.container .carrossel .container-item .item .image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.container .carrossel .item .info{
+.container .carrossel .container-item .item .info{
     height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.container .carrossel .item .info .name{
+.container .carrossel .container-item .item .info .name{
    font-size: 1.2rem;
    font-weight: bold;
    margin: 10px;
 }
 
 
-.container .carrossel .item .info .preco{
+.container .carrossel .container-item .item .info .preco{
    margin-top: 5px;
    border-radius: 10px;
    font-size: 1.2rem;
