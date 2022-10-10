@@ -51,7 +51,7 @@ export const Itens = () => {
                         <div className="container-item">
                             <div class="item">
                                 <div className='image'>
-                                    <img src='https://png.pngtree.com/png-vector/20201129/ourlarge/pngtree-beef-png-image_2406591.jpg' alt="shoe" />
+                                    <img src='https://avatars.githubusercontent.com/u/90064992?v=4' alt="shoe" />
                                 </div>
                                 <div className='info'>
                                     <span className='name'>{item.name}</span>
