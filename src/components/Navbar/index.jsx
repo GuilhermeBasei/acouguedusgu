@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { Produtos } from '../../pages/Produto'
 import './styles.css'
 
 export const Navbar = () =>{
@@ -8,9 +7,12 @@ export const Navbar = () =>{
 
   <Link to={'/'}>Home</Link>
   <Link to={'/produtos'}>Produtos</Link>
-  <a href="#news">Destaques</a>
-  <a href="#contact">Contato</a>
-  <a href="#about">Sobre</a>
+  <Link to={'/sobre'}>Sobre</Link>
+  <Link to={'/carrinho'}>Carrinho</Link>
+  <Link to={'/login'}>Login</Link>
+  <Link to={'/cadastro'}>Cadastro</Link>
+  
 </div>
     )
 }
+
