@@ -1,7 +1,17 @@
 .titulo{
     margin-top: 20px;
-    margin-left: 20px;
     padding: 4px;
+    color: #dd263f;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+}
+.titulo h3{
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 60px !important;
+}
+.bg-contato{
+    margin-top: 50px !important;
     background-color: rgb(230, 155, 155);
-    border-radius: 10px;
 }

@@ -1,12 +1,9 @@
 .container{
     width: 100vw;
-    height: 100vh;
     margin: auto;
 }
 .titulo{
     margin-top: 20px;
-    margin-left: 20px;
     padding: 4px;
-    background-color: rgb(230, 155, 155);
-    border-radius: 10px;
+    color: #dd263f;
 }
