@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Contatos } from "../../components/Contatos";
 import { Navbar } from "../../components/Navbar";
 import { CartContext } from "../../context";
@@ -29,9 +29,10 @@ export const MonoProduto = () => {
           <span>{`Valor: R$ ${item.value}`}</span>
           <br></br>
           <br></br>          
-          <button className="btAdd" onClick={() => addToCart(item.id)}>           
+          <Link to={"/carrinho"} className="btAdd" onClick={() => addToCart(item.id)}>           
             Adicionar ao Carrinho            
-          </button>
+          </Link>
+         
         </div>
       </div>
       <Contatos />
