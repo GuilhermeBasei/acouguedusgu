@@ -48,6 +48,13 @@
     cursor: pointer;
 }
 
+.sp1{
+    font-weight: 100;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+
 .form button:hover,
 .form button:active,
 .form button:focus {
