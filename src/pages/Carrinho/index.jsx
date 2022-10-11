@@ -12,6 +12,7 @@ export const Carrinho = () => {
     removeOneQuantity,
     getProduto,
     getTotalPrice,
+    endBuy,
   } = useContext(CartContext);
 
   return (
@@ -70,7 +71,7 @@ export const Carrinho = () => {
               <p class="total-amount">{`R$ ${getTotalPrice()}`}</p>
             </div>
 
-            <button>Finalizar Compra</button>
+            <button onClick={() => endBuy()}>Finalizar Compra</button>
           </footer>
         </div>
       </div>
