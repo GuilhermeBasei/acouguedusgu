@@ -26,8 +26,7 @@ export const MonoProduto = () => {
           <br></br>
           <span>{`Valor: R$ ${item.value}`}</span>
           <br></br>
-          <br></br>
-          <button className="btComprar">Comprar Agora</button>
+          <br></br>          
           <button className="btAdd" onClick={() => addToCart(item.id)}>
             Adicionar ao Carrinho
           </button>

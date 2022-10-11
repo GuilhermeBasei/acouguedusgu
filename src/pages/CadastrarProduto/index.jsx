@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { Contatos } from "../../components/Contatos";
 import { Navbar } from "../../components/Navbar";
 import { CartContext } from "../../context";
+import './styles.css'
 
 export const CadastrarProduto = () => {
   const { cart, totalPrice, createProduct, updateProduct } =
@@ -76,7 +77,7 @@ export const CadastrarProduto = () => {
             placeholder="Data"
             value={date}
             onChange={(e) => setDate(e.target.value)}
-          />
+          /><br></br>
           <button type="submit">
             {isUpdating ? "Editar Produto" : "Cadastrar Produto"}
           </button>
