@@ -54,6 +54,9 @@ export const CadastrarProduto = () => {
       <Navbar />
       <div class="createProduct">
         <form class="product-form" onSubmit={(e) => handleSubmit(e)}>
+          <h1 className="sp1">
+          {isUpdating ? "Editar Produto" : "Cadastrar Produto"}
+          </h1><br></br>
           <input
             type="text"
             placeholder="Nome"
