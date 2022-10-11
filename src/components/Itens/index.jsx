@@ -46,7 +46,7 @@ export const Itens = () => {
         speed: 500,
         autoplay: true,
         autoplaySpeed: 2000,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1
     };
 

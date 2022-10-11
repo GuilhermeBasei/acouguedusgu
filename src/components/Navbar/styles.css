@@ -1,12 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+header{
+  display: flex;
+  justify-content: center;
+}
+nav{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-header{
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 30px;
+}
+.logo{
+  padding: 0 !important;
+}
+.logo h1{
+  font-family: 'Dancing Script', cursive !important;
+  font-weight: 600;
+  color: white;
+  font-size: 50px;
+}
 .topnav {
-    background-color: rgb(198, 162, 162);
+    background-color: #dd263f;
     overflow: hidden;
+    height: 65px;
+    z-index: 10;
+    position: sticky;
+    top: 0;
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
-    float: left;
-    color: #030303;
+    color: white;
+    font-weight: 400;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -15,12 +44,10 @@
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: rgba(143, 75, 75, 0.995);
-    color: rgb(255, 255, 255);
+    font-weight: 600;
   }
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #060505;
-    color: white;
+    color: #ff8c8c;
   }
