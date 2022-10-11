@@ -1,21 +1,23 @@
-.container{
-    width: 100vw;
-    margin: auto;   
+.container {
+  width: 100vw;
+  margin: auto;
 }
 
-.imgProd{
-    width: 300px;
-    height: 300px;
+.imgProd {
+  width: 300px;
+  height: 300px;
 }
 
-.btComprar{
-   padding: 10px;
+.btComprar {
+  padding: 10px;
 }
 
-.btAdd{
-    padding: 10px;
-    background-color: orange;
-    color: black;
-    text-align: center;
-    margin-left: 5px;
+.btAdd {
+  padding: 10px;
+  background-color: orange;
+  color: black;
+  text-align: center;
+  margin-left: 5px;
+  text-decoration: none;
+  border-radius: 10px;
 }

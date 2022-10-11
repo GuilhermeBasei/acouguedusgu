@@ -13,6 +13,8 @@ button {
   color: black;
   text-align: center;
   margin-left: 5px;
+  text-decoration: none;
+  border-radius: 10px;
 }
 .imgProd {
   width: 200px;
