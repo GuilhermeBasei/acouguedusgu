@@ -11,6 +11,8 @@ export const MonoProduto = () => {
   const location = useLocation();
   const item = location.state;
 
+
+  
   return (
     <div>
       <Navbar />
@@ -27,8 +29,8 @@ export const MonoProduto = () => {
           <span>{`Valor: R$ ${item.value}`}</span>
           <br></br>
           <br></br>          
-          <button className="btAdd" onClick={() => addToCart(item.id)}>
-            Adicionar ao Carrinho
+          <button className="btAdd" onClick={() => addToCart(item.id)}>           
+            Adicionar ao Carrinho            
           </button>
         </div>
       </div>

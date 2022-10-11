@@ -3,9 +3,10 @@ import { useContext, useState } from "react";
 import "./styles.css";
 import { CartContext } from "../../context";
 
-export const Item = () => {
+export const Item = () => { 
   const { addToCart, products, updateProduct } = useContext(CartContext);
 
+ 
   return (
     <div className="container">
       <div class="container">
