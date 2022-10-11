@@ -34,11 +34,6 @@ export const Itens = () => {
             value: 5.00,
             link: 'https://atacadaotopburguer.com.br/wp-content/uploads/2020/08/carvao25kg.png',
         },
-        {
-            name: "Espetos",
-            value: 27.90,
-            link: 'https://png.pngtree.com/png-vector/20210205/ourlarge/pngtree-bbq-lamb-skewers-png-image_2873841.jpg',
-        }
     ]);
     var settings = {
         dots: true,
@@ -63,7 +58,6 @@ export const Itens = () => {
                                 <div className='info'>
                                     <span className='name'>{item.name}</span>
                                     <span className='preco'>{`R$${item.value}KG`}</span>
-                                    <button>Adicionar ao carrinho</button>
                                 </div>
                             </div>
                         </div>

@@ -16,6 +16,7 @@ nav{
 }
 .logo{
   padding: 0 !important;
+  position: absolute;
 }
 .logo h1{
   font-family: 'Dancing Script', cursive !important;
