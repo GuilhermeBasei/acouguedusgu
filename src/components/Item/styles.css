@@ -6,6 +6,16 @@ button {
   margin-top: 10px;
   padding: 5px;
 }
+
+.btAdd{
+  padding: 10px;
+  background-color: orange;
+  color: black;
+  text-align: center;
+  margin-left: 5px;
+  text-decoration: none;
+  border-radius: 10px;
+}
 .imgProd {
   width: 200px;
   height: 200px;

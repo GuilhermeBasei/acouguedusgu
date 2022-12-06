@@ -143,6 +143,11 @@ export const CartProvider = ({ children }) => {
     setProducts(currentProducts);
   }
 
+  function endBuy() {
+    setCart([]);
+    alert(`Venda finalizada no valor de ${totalPrice}`);
+  }
+
   return (
     <CartContext.Provider
       value={{

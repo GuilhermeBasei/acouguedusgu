@@ -56,9 +56,10 @@ export const Item = () => {
                   </Link>
                   : null
                 }
-                <button onClick={() => addToCart(item.id)}>
+                <Link to={"/carrinho"} className="btAdd"
+                 onClick={() => addToCart(item.id)}>
                   Adicionar ao carrinho
-                </button>
+                </Link>
               </div>
             );
           })}
