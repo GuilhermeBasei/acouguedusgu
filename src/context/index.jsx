@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import api from '../api/api'
 
 export const CartContext = createContext({});
 
@@ -97,20 +98,46 @@ export const CartProvider = ({ children }) => {
     setTotalPrice(price);
   }
 
-  function createProduct(product) {
+  async function createProduct(product) {
     product.id = cont;
     setCont((prev) => prev + 1);
-
+    try{
+      const data = {
+        id: product.id,
+        description: product.name,
+        price: parseInt(product.value)
+      }
+      console.log(JSON.stringify(data))
+      await api.post('Products',JSON.stringify(data))
+    }catch(err){
+      alert('erro')
+    }
     setProducts([...products, product]);
+
+  }
+
+  function handleUpdate(updatedProduct){
+    try{
+      const data = {
+        id: updatedProduct.id,
+        description: updatedProduct.name,
+        price: parseInt(updatedProduct.value)
+      }
+      console.log(JSON.stringify(data))
+      api.put(`Products/${data.id}`,JSON.stringify(data))
+    }catch(err){
+      alert('erro')
+    }
   }
 
   function updateProduct(id, updatedProduct) {
     const currentProducts = [...products];
     const prod = currentProducts.find((product) => product.id == id);
     const index = currentProducts.indexOf(prod);
-
     updatedProduct.id = id;
-
+    
+    handleUpdate(updatedProduct)
+    
     currentProducts[index] = updatedProduct;
 
     setProducts(currentProducts);
@@ -130,6 +157,7 @@ export const CartProvider = ({ children }) => {
         removeOneQuantity,
         getProduto,
         getTotalPrice,
+        setProducts
       }}
     >
       {children}

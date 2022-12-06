@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Slider from "react-slick";
 import './styles.css';
-//teste
+import api from '../../api/api';
 export const Itens = () => {
     const [itens, setItens] = useState([
         {
@@ -44,6 +44,22 @@ export const Itens = () => {
         slidesToShow: 4,
         slidesToScroll: 1
     };
+
+    useEffect(()=>{
+        const getProducts = async ()=>{
+          const response = await api.get('Products')
+          console.log(response.data)
+          const itens = response?.data.map((item)=>{
+            return {
+              name: item.description,
+              value: item.price,
+              link: "https://io.convertiez.com.br/m/superpaguemenos/shop/products/images/14380/medium/maminha-bovina-leve-mais-resfriada-kg_10762.jpg",
+            }
+          })
+          setItens(itens)
+        }
+        getProducts();
+      },[])
 
     return (
         <div className='container'>

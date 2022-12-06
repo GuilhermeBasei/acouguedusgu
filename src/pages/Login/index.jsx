@@ -3,15 +3,19 @@ import { Link, useNavigate } from "react-router-dom";
 import { Contatos } from "../../components/Contatos";
 import { Navbar } from "../../components/Navbar";
 import "./styles.css";
+import api from "../../api/api";
 
 export const Login = () => {
   const [password, setPassword] = useState();
   const [name, setName] = useState();
   const navigate = useNavigate();
 
-  function login(e){
+  async function login(e){
     e.preventDefault();
-    if(name == localStorage.getItem('name') && password == localStorage.getItem('password')){
+    const response = await api.get("Users")
+    const data = response.data
+    var user = data.find((item)=>(item.password === password && item.name===name))
+    if(user){
       localStorage.setItem('isLogged', true)
       alert("Logado com sucesso");
       navigate('/')
